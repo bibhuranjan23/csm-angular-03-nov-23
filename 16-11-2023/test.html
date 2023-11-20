@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Example</h1>
+    
+     <script>
+        function createButton() {
+        let count = 0;
+        const button = document.createElement('button');
+        button.textContent = 'Click me';
+        button.addEventListener('click', function() {
+            count++;
+            console.log(`Button clicked ${count} times.`);
+        });
+        return button;
+    }
+    const buttonElement = createButton();
+    document.body.appendChild(buttonElement);
+
+     </script>
+</body>
+</html>
