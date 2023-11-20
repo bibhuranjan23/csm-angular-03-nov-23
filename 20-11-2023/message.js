@@ -1,0 +1,1 @@
+export const message ="Welcome to ES6 Module Chapter";
