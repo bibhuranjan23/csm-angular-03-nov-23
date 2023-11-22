@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>SLNO</th>
+                <th>Name</th>
+                <th>Email</th>
+               </tr> 
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    <script>
+        fetch("https://jsonplaceholder.typicode.com/users")
+        .then((response) => response.json())
+        .then((json) => {
+                console.log(json);
+                console.log(json.length);
+                console.log(json[0]);
+                console.log(json[0].id);
+                console.log(json[0].name);
+                console.log(json[0].email);
+                let container=document.querySelector("#tbody");
+                let data='';
+                json.forEach(element => {
+                    data +='<tr>';
+                    data +=`<td>${element.id}</td>`;
+                    data +=`<td>${element.name}</td>`;
+                    data +=`<td>${element.email}</td>`;
+                    data +='</tr>';
+                });
+                container.innerHTML = data;
+            })
+        .catch(function() {
+           // handle the error
+        });
+
+    </script>
+</body>
+</html>
