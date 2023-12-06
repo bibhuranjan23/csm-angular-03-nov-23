@@ -1,4 +1,28 @@
-h1{
+/* h1{
     color:blue;
     font-size: 40px;
 }
+.d1{
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+}
+.p1{
+    color:rgb(31, 29, 27);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .c2{
+    background-color: chartreuse;
+  }
+  .c3{
+    color:yellow
+  }
+  .c4{
+     color: rgb(255,23,150);
+  }
+  .c5{
+    font-size:50px;
+  } */
