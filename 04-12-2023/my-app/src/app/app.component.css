@@ -26,3 +26,13 @@
   .c5{
     font-size:50px;
   } */
+
+.italicClass{
+  font-style: italic;
+}
+.boldClass{
+  font-weight: bold;
+}
+.txtColor{
+  color:blue;
+}

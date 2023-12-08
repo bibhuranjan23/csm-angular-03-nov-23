@@ -23,11 +23,50 @@
 <p [ngClass]="style2">Ng Class Example-2</p>
 <p [ngClass]="{'d1':true, 'c2':true}">Ng Class Example</p> -->
 
-<div class="card" style="width: 18rem;">
+<!-- <div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
+</div> -->
+<!-- <p>{{' FirstName :'+firstName}}</p>
+<p>{{' LastName :'+ lastName!=null?lastName:'Not Availabe'}}</p>
+<p>{{lastName?lastName:'Not Availabe'}}</p>
+<p>LastName :{{lastName?lastName:'Not Availabe'}}</p>
+<p>{{'Salary :'+salary}}</p>
+<p>{{'Bonous(10%) :'+salary*.1}}</p>
+<p>FullName :{{getFullName()}}</p>
+<img src="{{img}}" alt="image1" width="100px" height="100px"/>
+<img src="{{localImg}}" width="100px" height="100px" alt=""/>
+<hr>
+<h1>Product Lists</h1>
+<hr>
+<app-productlist></app-productlist>
+
+<hr>
+
+<p [innerHTML]="name"></p>
+<p [innerHTML]="getFullName()"></p>
+
+<button [disabled] = 'IsDisabledClick' > Click Here </button>              
+<button disabled = {{IsDisabledClick}} > Click Here </button>  
+
+<div>
+  {{MaliciousData}}
 </div>
+
+<div innerHTML="{{w}}" attr.height="{{w}}" >hhh</div> -->
+
+<p attr.class="{{classToApply}}">This is a paragraph</p>
+<p class="txtColor" [class]="classToApply">This is a paragraph</p>
+<p [class.boldClass]="!IsBold">This is a paragraph</p>
+
+<button class='colorClass' [ngClass]='AddCSSClasses()' (click)="show()">Click Me</button>
+<p>{{clicked}}</p>
+
+<!-- <input [value]="data" (input)='data=($event.target)'/> -->
+
+<input [(ngModel)]="data"/>
+<p>{{data}}</p>
