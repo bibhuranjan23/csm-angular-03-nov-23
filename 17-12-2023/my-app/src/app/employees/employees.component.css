@@ -1,0 +1,7 @@
+table{
+    width: 700px;
+    height: 300px;
+    border: 2px solid blue;
+    background-color: cadetblue;
+    margin: auto;
+}
