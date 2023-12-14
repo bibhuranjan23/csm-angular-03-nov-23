@@ -1,0 +1,122 @@
+<!-- <link href="app.component.css" />
+{{title}}
+<app-about></app-about>
+<app-home></app-home>
+<app-contact></app-contact>
+<nav>
+  <ul>
+    <li><a  routerLink="/home">Home</a></li>
+    <li><a routerLink="/about">About</a></li>
+    <li><a routerLink="/cont">Contact</a></li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>
+<h1 style="color:coral">Heading</h1>
+<p>Paragraph1</p>
+<p class="p1">Paragraph2</p>
+<p class="p1">Paragraph3</p>
+<p class="p1">Paragraph4</p>
+<div class="d1">
+
+</div>
+<p [ngClass]="style1">Ng Class Example-1</p>
+<p [ngClass]="style2">Ng Class Example-2</p>
+<p [ngClass]="{'d1':true, 'c2':true}">Ng Class Example</p> -->
+
+<!-- <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div> -->
+<!-- <p>{{' FirstName :'+firstName}}</p>
+<p>{{' LastName :'+ lastName!=null?lastName:'Not Availabe'}}</p>
+<p>{{lastName?lastName:'Not Availabe'}}</p>
+<p>LastName :{{lastName?lastName:'Not Availabe'}}</p>
+<p>{{'Salary :'+salary}}</p>
+<p>{{'Bonous(10%) :'+salary*.1}}</p>
+<p>FullName :{{getFullName()}}</p>
+<img src="{{img}}" alt="image1" width="100px" height="100px"/>
+<img src="{{localImg}}" width="100px" height="100px" alt=""/>
+<hr>
+<h1>Product Lists</h1>
+<hr>
+<app-productlist></app-productlist>
+
+<hr>
+
+<p [innerHTML]="name"></p>
+<p [innerHTML]="getFullName()"></p>
+
+<button [disabled] = 'IsDisabledClick' > Click Here </button>              
+<button disabled = {{IsDisabledClick}} > Click Here </button>  
+
+<div>
+  {{MaliciousData}}
+</div>
+
+<div innerHTML="{{w}}" attr.height="{{w}}" >hhh</div> -->
+
+<!-- <p attr.class="{{classToApply}}">This is a paragraph</p>
+<p class="txtColor" [class]="classToApply">This is a paragraph</p>
+<p [class.boldClass]="!IsBold">This is a paragraph</p>
+
+<button class='colorClass' [ngClass]='AddCSSClasses()' (click)="show()">Click Me</button>
+<p>{{clicked}}</p>
+
+<input [value]="data" (input)='data=($event.target)'/> -->
+
+<!-- <input [(ngModel)]="data"/>
+<p>{{data}}</p> -->
+<!-- <div *ngIf="isValid">
+  <b>The Data is valid</b>
+</div>
+<div *ngIf="!isValid">
+  <b>The Data is not valid</b>
+</div> -->
+
+<div>
+  <input type="radio" value="valid"  (change)="changeValue()" [checked]="isValid">valid
+  <input type="radio" value="invalid"  (change)="changeValue()" [checked]="!isValid">Invalid
+</div>
+<div *ngIf="isValid else xyz">
+   <b>It is valid</b>
+</div>
+
+<ng-template #xyz>
+  <div>
+    <b>It is Invalid</b>
+  </div>
+</ng-template>
+
+<p *ngIf="num==100 then p1  else p2">
+  Sample Pragragraph
+</p>
+
+<ng-template #p1>
+   <p>Praragraph-1</p>
+</ng-template>
+<ng-template #p2>
+  <p>Praragraph-2</p>
+</ng-template>
+
+<div [ngSwitch]="day">
+  <div *ngSwitchCase="'sun'">Sunday</div>
+  <div *ngSwitchCase="'mon'">Monday</div>
+  <div *ngSwitchCase="'tue'">Tuesday</div>
+  <div *ngSwitchDefault>Not valid day</div>
+</div>
+
+<select>
+  <option>Select</option>
+  <option value="IN">INDIA</option>
+  <option value="PAK">PAKISTAN</option>
+</select>
+
+<h5>Selected Country Name is {{countryName}}</h5>
+
+<p *ngFor="let student of students;let i=index; let isFirst=first;let islast=last;let isOdd=odd ;let isEven=even;trackBy:trackByMethod">
+  SLNO :{{i+1}} ID: {{student.ID}}, FirstName: {{student.firstName}}, LastName:{{student.lastName}}, Branch: {{student.Branch}},IS FIRST :{{isFirst}},IS LAST:{{islast}},ISEVEN:{{isEven}} ,ISODD:{{isOdd}}
+</p>
