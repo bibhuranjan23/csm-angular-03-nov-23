@@ -36,3 +36,9 @@
 .txtColor{
   color:blue;
 }
+
+p{
+   border:2px solid blue;
+   margin: 5px;
+   padding: 5px;
+}

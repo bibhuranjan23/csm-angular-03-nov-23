@@ -1,0 +1,22 @@
+<app-student-count [all]="getAllStudent()" [female]="getFemaleStudents()" [male]="getMaleStudents()"></app-student-count>
+<table>
+    <thead>
+        
+       <tr>
+         <th>ID</th>
+         <th>Name</th>
+         <th>Gender</th>
+         <th>DOB</th>
+         <th>Course Fee</th>
+       </tr>
+    </thead>
+    <tbody>
+         <tr *ngFor="let student of students">
+            <td>{{student.id | uppercase}}</td>
+            <td>{{student.name | uppercase}}</td>
+            <td>{{student.gender}}</td>
+            <td>{{student.dob}}</td>
+            <td>{{student.fee}}</td>
+         </tr>
+    </tbody>
+</table>

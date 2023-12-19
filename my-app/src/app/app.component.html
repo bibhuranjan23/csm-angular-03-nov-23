@@ -59,14 +59,66 @@
 
 <div innerHTML="{{w}}" attr.height="{{w}}" >hhh</div> -->
 
-<p attr.class="{{classToApply}}">This is a paragraph</p>
+<!-- <p attr.class="{{classToApply}}">This is a paragraph</p>
 <p class="txtColor" [class]="classToApply">This is a paragraph</p>
 <p [class.boldClass]="!IsBold">This is a paragraph</p>
 
 <button class='colorClass' [ngClass]='AddCSSClasses()' (click)="show()">Click Me</button>
 <p>{{clicked}}</p>
 
-<!-- <input [value]="data" (input)='data=($event.target)'/> -->
+<input [value]="data" (input)='data=($event.target)'/> -->
 
-<input [(ngModel)]="data"/>
-<p>{{data}}</p>
+<!-- <input [(ngModel)]="data"/>
+<p>{{data}}</p> -->
+<!-- <div *ngIf="isValid">
+  <b>The Data is valid</b>
+</div>
+<div *ngIf="!isValid">
+  <b>The Data is not valid</b>
+</div> -->
+
+<!-- <div>
+  <input type="radio" value="valid"  (change)="changeValue()" [checked]="isValid">valid
+  <input type="radio" value="invalid"  (change)="changeValue()" [checked]="!isValid">Invalid
+</div>
+<div *ngIf="isValid else xyz">
+   <b>It is valid</b>
+</div>
+
+<ng-template #xyz>
+  <div>
+    <b>It is Invalid</b>
+  </div>
+</ng-template>
+
+<p *ngIf="num==100 then p1  else p2">
+  Sample Pragragraph
+</p>
+
+<ng-template #p1>
+   <p>Praragraph-1</p>
+</ng-template>
+<ng-template #p2>
+  <p>Praragraph-2</p>
+</ng-template>
+
+<div [ngSwitch]="day">
+  <div *ngSwitchCase="'sun'">Sunday</div>
+  <div *ngSwitchCase="'mon'">Monday</div>
+  <div *ngSwitchCase="'tue'">Tuesday</div>
+  <div *ngSwitchDefault>Not valid day</div>
+</div>
+
+<select>
+  <option>Select</option>
+  <option value="IN">INDIA</option>
+  <option value="PAK">PAKISTAN</option>
+</select>
+
+<h5>Selected Country Name is {{countryName}}</h5>
+
+<p *ngFor="let student of students;let i=index; let isFirst=first;let islast=last;let isOdd=odd ;let isEven=even;trackBy:trackByMethod">
+  SLNO :{{i+1}} ID: {{student.ID}}, FirstName: {{student.firstName}}, LastName:{{student.lastName}}, Branch: {{student.Branch}},IS FIRST :{{isFirst}},IS LAST:{{islast}},ISEVEN:{{isEven}} ,ISODD:{{isOdd}}
+</p> -->
+
+<app-studentlist></app-studentlist>
