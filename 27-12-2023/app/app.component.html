@@ -1,0 +1,15 @@
+<p>App Component</p>
+<button (click)="getUsers()">Get Users</button>
+<br/>
+<br/>
+<br/>
+<input type="text" name="userid" [(ngModel)] ="userId"  />
+<button (click)="getUserById()">Get User by ID</button>
+<pre>
+   {{users | json}}
+</pre>
+
+<hr/>
+<pre>
+   {{user | json}}
+</pre>
